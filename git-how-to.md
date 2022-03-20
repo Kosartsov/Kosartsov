@@ -15,11 +15,13 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 Не используйте пароль при генерации ключа
 > Enter passphrase (empty for no passphrase): [Press enter]
+
 > Enter same passphrase again: [Press enter]
 
 Запустите в терминале shh-agent.
 
 eval "$(ssh-agent -s)"
+
 > Agent pid 59566
 
 Добавьте свой приватный ключ SSH в ssh-agent. Если вы создали свой ключ под другим именем, замените id_ed25519 в команде именем вашего
